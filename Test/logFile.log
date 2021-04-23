@@ -1,0 +1,11 @@
+2021-03-27 17:00:57,326  INFO [main] class:50 - Browser Setup Sucessfully
+2021-03-27 17:01:03,115  INFO [main] class:57 - Chrome Browser opened Sucessfully
+2021-03-27 17:01:08,507  INFO [main] class:61 - Website Responsce code genrated scuccessfully
+2021-03-27 17:01:12,788  INFO [main] class:64 - Chrome Browser closed successfully
+2021-03-27 17:01:22,832  INFO [main] class:68 - Firefox Browser Opened Successfully
+2021-03-27 17:01:28,094  INFO [main] class:72 - Website Responsce code genrated scuccessfully
+2021-03-27 17:01:28,920  INFO [main] class:75 - Firefox Browser closed successfully
+2021-03-27 17:01:34,690  INFO [main] class:79 - Edge Browser opened Sucessfully
+2021-03-27 17:01:39,973  INFO [main] class:83 - Website Responsce code genrated scuccessfully
+2021-03-27 17:01:40,061  INFO [main] class:86 - Edge Browser closed successfully
+2021-03-27 17:01:40,064  INFO [main] class:50 - Browser Setup Sucessfully
