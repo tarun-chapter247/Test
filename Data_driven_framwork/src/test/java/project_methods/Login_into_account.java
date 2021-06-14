@@ -25,8 +25,8 @@ public class Login_into_account {
 		try {
 		
 		ReadExcelSheet rs = new ReadExcelSheet(); 
-		ArrayList userName = rs.readExcelData(0); 
-		ArrayList excelpass = rs.readExcelData(1);
+		ArrayList userName = rs.readExcelData(0,0); 
+		ArrayList excelpass = rs.readExcelData(0,1);
 		
 		System.out.println(userName.size());
 		
@@ -52,11 +52,11 @@ public class Login_into_account {
 			
 			if (pagetitle.contains("Tantrany - Dashboard"))
 			{
-				WriteExcelResult.setCellData("Pass", i+1, 2);
+				WriteExcelResult.setCellData("Pass",0,i+1, 2);
 			}
 			else
 			{
-				WriteExcelResult.setCellData("failed", i+1, 2);
+				WriteExcelResult.setCellData("failed",0, i+1, 2);
 				cap.captureScreenshot(driver, "loginfailed");
 						
 			}
@@ -69,6 +69,18 @@ public class Login_into_account {
 		System.out.println("Test is successful"); 
 		
 	}catch(IOException|NullPointerException e)
+		{
+			System.out.println(e);
+		}
+	}
+	
+	WebDriver driver;
+	public void loginforpas() {
+		try {
+		Login_page_element element = new Login_page_element();
+		
+		
+		}catch(NullPointerException e)
 		{
 			System.out.println(e);
 		}

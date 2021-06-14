@@ -16,12 +16,12 @@ public class WriteExcelResult
 { 
   static HSSFRow row; 
   static HSSFCell cell; 
- public static void setCellData(String Result, int RowNum, int ColNum) throws Exception 
+ public static void setCellData(String Result, int sheetnumber, int RowNum, int ColNum) throws Exception 
  { 
    File file = new File(Constant.filePath); 
    FileInputStream fis = new FileInputStream(file); 
    HSSFWorkbook wb = new HSSFWorkbook(fis); 
-   HSSFSheet sheet = wb.getSheet("Sheet1"); 
+   HSSFSheet sheet = wb.getSheetAt(sheetnumber);
    
   int rowCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
   System.out.println(rowCount);

@@ -14,7 +14,7 @@ import utility.Constant;
 
 public class ReadExcelSheet<XSSFWorkbook, XSSFSheet> {
 	
-	public ArrayList readExcelData(int colNo) throws IOException,NullPointerException
+	public ArrayList readExcelData(int sheetnumber,int colNo ) throws IOException,NullPointerException
 	{ 
 	
 	   String filePath = Constant.filePath; 
@@ -22,7 +22,7 @@ public class ReadExcelSheet<XSSFWorkbook, XSSFSheet> {
 	   FileInputStream fis = new FileInputStream(file); 
 	   
 	   HSSFWorkbook wb=new HSSFWorkbook(fis);   
-	   HSSFSheet sheet=wb.getSheetAt(0);
+	   HSSFSheet sheet=wb.getSheetAt(sheetnumber);
 	 
 	  Iterator<Row> row = sheet.rowIterator(); 
 	   row.next(); 
